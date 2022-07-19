@@ -1,0 +1,23 @@
+{
+  "name": "testcafe-example",
+  "version": "1.0.0",
+  "description": "TestCafe Automation Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome tests/firstTestWithSelectorTest.js",
+    "test-metadata": "testcafe chrome tests/firstTestWithMetaDataTest.js --test-meta env=staging",
+    "test-run-all-browsers": "testcafe all test/firstTestWithSelectortTest.js --skip-js-errors",
+    "test-run-parallel": "testcafe -c 2 chrome tests/firstTestWithMetaDataTest.js --skip-js-errors",
+    "test-live-mode": "testcafe chrome tests/firstTestWithMetaDataTest.js -L"
+    
+  },
+  "keywords": [
+    "testcafe",
+    "automation"
+  ],
+  "author": "Kgs. Azzam Nizar",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.20.0"
+  }
+}
