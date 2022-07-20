@@ -1,1 +1,0 @@
-fixture('iFrame Example').page('http://www.the-internet.herokuapp.com/iframe')
