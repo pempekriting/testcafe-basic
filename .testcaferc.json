@@ -1,0 +1,10 @@
+{
+    "browsers": "chrome",
+    "src": "test",
+    "reporter": "list",
+    "screenshots": {
+        "path": "screenshots"
+    },
+    "videoPath": "reports/videos",
+    "concurrency": 1
+}
