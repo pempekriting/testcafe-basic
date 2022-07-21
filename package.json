@@ -4,17 +4,22 @@
   "description": "TestCafe Automation with Pattern",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe"
+    "test": "testcafe",
+    "test-bdd-report": "npx cucumber-js -f json:reports/cucumber_report.json --reporter html:reports/test_results.html",
+    "test-report-html": "testcafe chrome test/ --reporter html:reports/test_results.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
-    "testcafe": "^1.20.0"
+    "base64-img": "^1.0.4",
+    "testcafe": "^1.20.0",
+    "testcafe-reporter-html": "^1.4.6"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^8.5.0",
     "@faker-js/faker": "^7.3.0",
-    "cucumber": "^6.0.7"
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^5.5.0"
   }
 }
